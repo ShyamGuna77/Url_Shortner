@@ -10,7 +10,7 @@ const {
 const router = express.Router()
 
 router.post("/shorten", shortenUrl);
-router.get("/urls", getAllUrls);
+router.get("/urls", getallUrls);
 router.get("/:shortUrl", redirectUrl);
 router.delete("/urls/:id", deleteUrl);
 
